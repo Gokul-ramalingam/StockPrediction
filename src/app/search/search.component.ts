@@ -89,14 +89,17 @@ export class SearchComponent implements OnInit {
 
   public func(value)
   {
-    this.price=this.stock.getStocks(value);
+    this.price = this.stock.getStocks(value);
     this.symbol=this.stock.getSymbol(value);
     this.name=this.stock.getName(value);
     this.image=this.stock.getImage(value);
     this.time=this.stock.getTime(value);
     this.stock.addPast(value);
     this.weekReport=this.stock.getWeekReport(value);
+    if(this.price!=null)
     this.flag=true;
+    else if(this.price==null)
+    this.flag=false;
   }
 
   public viewPage(id)

@@ -2,67 +2,61 @@ import { Injectable } from '@angular/core';
 import {stock} from './stocksClass'
 @Injectable()
 export class StockService {
-  stocks = [];
-  price = [];
-  past = [];
+ public stocks = [];
+ public price = [];
+ public past = [];
   constructor() { }
   getStocks(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-      this.price = stock.price; 
+      if(name==s.symbol)
+      return s.price; 
     }
-    return this.price;
+    return null;
   }
   getImage(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-       return stock.image; 
+      if(name==s.symbol)
+       return s.image; 
     }
     return null;
   }
   getName(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-       return stock.name; 
+      if(name==s.symbol)
+       return s.name; 
     }
     return null;
   }
   getTime(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-       return stock.time; 
+      if(name==s.symbol)
+       return s.time; 
     }
     return null;
   }
   getSymbol(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-       return stock.symbol; 
+      if(name==s.symbol)
+       return s.symbol; 
     }
     return null;
   }
 
   addPast(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(name==stock.symbol)
+      if(name==s.symbol)
        {
          let count = 0;
          for(let p of this.past)
@@ -73,7 +67,7 @@ export class StockService {
            }
            count++;
          }
-         this.past.splice(0,0,stock);
+         this.past.splice(0,0,s);
        }
     }
     console.log(this.past);
@@ -84,32 +78,31 @@ export class StockService {
   }
   getWeekReport(name)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+ 
+    for(let s of stock)
     {
-      if(name==stock.symbol)
-       return stock.weekReport; 
+      if(name==s.symbol)
+       return s.weekReport; 
     }
     return null;
   }
   getStockId(id)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+
+    for(let s of stock)
     {
-      if(id==stock.id)
-       return stock; 
+      if(id==s.id)
+       return s; 
     }
     return null;
   }
 
   getPrice(id)
   {
-    this.stocks = stock;
-    for(let stock of this.stocks)
+    for(let s of stock)
     {
-      if(id==stock.id)
-       return stock.price; 
+      if(id==s.id)
+       return s.price; 
     }
     return null;
   }
