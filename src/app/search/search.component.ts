@@ -19,6 +19,7 @@ export class SearchComponent implements OnInit {
   public flag=false;
   public time;
   public past=[];
+  public show;
   public days=['01/07','02/07','03/07','04/07','05/07','06/07','07/07','08/07','09/07','10/07','11/07','12/07','13/07'];
   
 

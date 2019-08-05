@@ -59,7 +59,8 @@
       </div>
     </div>
    
-    <div class="chart" (click)='ngOnInit()'>
+    <div class="chart" (click)='ngOnInit();show=true'>
+        <span *ngIf='!show'>Click here to view chart</span>
       <canvas id="canvas"></canvas>
     </div>
 
