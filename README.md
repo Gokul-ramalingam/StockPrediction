@@ -1,5 +1,37 @@
 # Generalstock
 
+# CryptoCurrencyPrediction
+
+This application provides Company stock details in an flexible user interface by using data-rich graphs from Chart JS
+
+## Languages Utilized
+
+* HTML
+* CSS
+* TypeScript
+
+## Components
+
+* search
+* view
+* page-not-found
+
+## Additional Feature
+~~~
+Chart JS
+~~~
+
+## Preview
+
+![image](readme/first.png)
+![image](readme/second.png)
+![image](readme/third.png)
+![image](readme/fourth.png)
+![image](readme/fifth.png)
+![image](readme/sixth.png)
+
+# Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.6.
 
 ## Development server
