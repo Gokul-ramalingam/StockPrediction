@@ -1,7 +1,5 @@
 # Generalstock
 
-# CryptoCurrencyPrediction
-
 This application provides Company stock details in an flexible user interface by using data-rich graphs from Chart JS
 
 ## Languages Utilized
